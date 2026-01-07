@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PesquisaBinaria", "PesquisaBinaria\PesquisaBinaria.csproj", "{D130259F-F7CF-47BD-88F7-4A58D77BD113}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickSort", "QuickSort\QuickSort.csproj", "{154A371F-FF81-4E69-AFD2-F7A3780151D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{D130259F-F7CF-47BD-88F7-4A58D77BD113}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D130259F-F7CF-47BD-88F7-4A58D77BD113}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D130259F-F7CF-47BD-88F7-4A58D77BD113}.Release|Any CPU.Build.0 = Release|Any CPU
+		{154A371F-FF81-4E69-AFD2-F7A3780151D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{154A371F-FF81-4E69-AFD2-F7A3780151D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{154A371F-FF81-4E69-AFD2-F7A3780151D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{154A371F-FF81-4E69-AFD2-F7A3780151D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
