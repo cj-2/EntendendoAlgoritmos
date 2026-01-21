@@ -25,13 +25,13 @@ public static class Algoritmos
         return BuscaMaior(novaLista, maior);
     }
 
-    public static int? BuscaMenor(int[] lista, int? menor = null)
+    public static int? BuscaMenor(int[] lista)
     {
         if (lista.Length == 0)
-            return menor;
+            return null;
 
         var idx = 1;
-        menor = lista[0];
+        var menor = lista[0];
 
         while (idx < lista.Length)
         {
@@ -44,6 +44,25 @@ public static class Algoritmos
         return menor;
     }
 
+    public static int? BuscaIdxMenor(int[] lista)
+    {
+        if (lista.Length == 0)
+            return null;
+
+        var idxAtual = 1;
+        var idxMenor = 0;
+
+        while (idxAtual < lista.Length)
+        {
+            if (lista[idxAtual] < lista[idxMenor])
+                idxMenor = idxAtual;
+
+            idxAtual++;
+        }
+
+        return idxMenor;
+    }
+    
     public static int Soma(int[] lista)
     {
         if (lista.Length == 0) return 0;

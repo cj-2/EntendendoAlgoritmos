@@ -16,3 +16,8 @@ Console.WriteLine(Algoritmos.BuscaMenor([]));
 Console.WriteLine(Algoritmos.BuscaMenor([-42]));
 Console.WriteLine(Algoritmos.BuscaMenor([42]));
 Console.WriteLine(Algoritmos.BuscaMenor([5, 10, 15, -2, 2]));
+Console.WriteLine("---");
+Console.WriteLine(Algoritmos.BuscaIdxMenor([]));
+Console.WriteLine(Algoritmos.BuscaIdxMenor([-42]));
+Console.WriteLine(Algoritmos.BuscaIdxMenor([42]));
+Console.WriteLine(Algoritmos.BuscaIdxMenor([5, 10, 15, -2, 2]));
