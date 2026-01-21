@@ -61,15 +61,16 @@ var pesquisaBinaria = (int[] lista, int item) =>
 };
 
 Console.WriteLine($"Tamanho: {listaOrdenada.Length}");
-// Primeiro e último
+Console.WriteLine("---");
 Console.WriteLine(pesquisaBinaria(listaOrdenada, 2));
 Console.WriteLine(pesquisaBinaria(listaOrdenada, 2000));
-// Segundo e penúltimo
+Console.WriteLine("---");
 Console.WriteLine(pesquisaBinaria(listaOrdenada, 5));
 Console.WriteLine(pesquisaBinaria(listaOrdenada, 1992));
-// Restante
+Console.WriteLine("---");
 Console.WriteLine(pesquisaBinaria(listaOrdenada, 701));
 Console.WriteLine(pesquisaBinaria(listaOrdenada, 1223));
 Console.WriteLine(pesquisaBinaria(listaOrdenada, 1234));
-Console.WriteLine(pesquisaBinaria(listaOrdenada, 701));
+Console.WriteLine("---");
+Console.WriteLine(pesquisaBinaria(listaOrdenada, 702));
 Console.WriteLine(pesquisaBinaria(listaOrdenada, 1144));

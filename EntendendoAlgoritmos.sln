@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PesquisaBinaria", "Pesquisa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickSort", "QuickSort\QuickSort.csproj", "{154A371F-FF81-4E69-AFD2-F7A3780151D5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PesquisaBinariaRecursiva", "PesquisaBinariaRecursiva\PesquisaBinariaRecursiva.csproj", "{9C052AD8-7A25-417D-9F58-F34A2B18A41E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{154A371F-FF81-4E69-AFD2-F7A3780151D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{154A371F-FF81-4E69-AFD2-F7A3780151D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{154A371F-FF81-4E69-AFD2-F7A3780151D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C052AD8-7A25-417D-9F58-F34A2B18A41E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C052AD8-7A25-417D-9F58-F34A2B18A41E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C052AD8-7A25-417D-9F58-F34A2B18A41E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C052AD8-7A25-417D-9F58-F34A2B18A41E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
