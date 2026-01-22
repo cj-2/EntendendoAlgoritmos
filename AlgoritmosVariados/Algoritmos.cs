@@ -2,19 +2,19 @@
 
 public static class Algoritmos
 {
-    private static int[] RemoverPrimeiroItem(int[] lista)
+    private static int[] RemoverPrimeiroItem(int[] array)
     {
-        var novaLista = new int[lista.Length - 1];
-        Array.Copy(lista, 1, novaLista, 0, lista.Length - 1);
+        var novaLista = new int[array.Length - 1];
+        Array.Copy(array, 1, novaLista, 0, array.Length - 1);
         return novaLista;
     }
 
-    public static int? BuscaMaior(int[] lista, int? maior = null)
+    public static int? BuscaMaior(int[] array, int? maior = null)
     {
-        if (lista.Length == 0) return maior;
+        if (array.Length == 0) return maior;
 
-        var primeiro = lista[0];
-        var novaLista = RemoverPrimeiroItem(lista);
+        var primeiro = array[0];
+        var novaLista = RemoverPrimeiroItem(array);
 
         if (maior == null)
             return BuscaMaior(novaLista, primeiro);
@@ -25,18 +25,18 @@ public static class Algoritmos
         return BuscaMaior(novaLista, maior);
     }
 
-    public static int? BuscaMenor(int[] lista)
+    public static int? BuscaMenor(int[] array)
     {
-        if (lista.Length == 0)
+        if (array.Length == 0)
             return null;
 
         var idx = 1;
-        var menor = lista[0];
+        var menor = array[0];
 
-        while (idx < lista.Length)
+        while (idx < array.Length)
         {
-            if (lista[idx] < menor)
-                menor = lista[idx];
+            if (array[idx] < menor)
+                menor = array[idx];
 
             idx++;
         }
@@ -44,17 +44,17 @@ public static class Algoritmos
         return menor;
     }
 
-    public static int? BuscaIdxMenor(int[] lista)
+    public static int? BuscaIdxMenor(int[] array)
     {
-        if (lista.Length == 0)
+        if (array.Length == 0)
             return null;
 
         var idxAtual = 1;
         var idxMenor = 0;
 
-        while (idxAtual < lista.Length)
+        while (idxAtual < array.Length)
         {
-            if (lista[idxAtual] < lista[idxMenor])
+            if (array[idxAtual] < array[idxMenor])
                 idxMenor = idxAtual;
 
             idxAtual++;
@@ -62,21 +62,36 @@ public static class Algoritmos
 
         return idxMenor;
     }
-    
-    public static int Soma(int[] lista)
-    {
-        if (lista.Length == 0) return 0;
 
-        var primeiro = lista[0];
-        var novaLista = RemoverPrimeiroItem(lista);
+    public static int Soma(int[] array)
+    {
+        if (array.Length == 0) return 0;
+
+        var primeiro = array[0];
+        var novaLista = RemoverPrimeiroItem(array);
         return primeiro + Soma(novaLista);
     }
 
-    public static int TamanhoLista(int[] lista)
+    public static int TamanhoArray(int[] array)
     {
-        if (lista.Length == 0) return 0;
+        if (array.Length == 0) return 0;
 
-        var novaLista = RemoverPrimeiroItem(lista);
-        return 1 + TamanhoLista(novaLista);
+        var novaLista = RemoverPrimeiroItem(array);
+        return 1 + TamanhoArray(novaLista);
+    }
+
+    public static List<int> OrdenacaoPorSelecao(List<int> list)
+    {
+        var ordenada = new List<int>();
+
+        while (list.Count > 0)
+        {
+            var indexMenor = BuscaIdxMenor(list.ToArray());
+            if (indexMenor == null) break;
+            ordenada.Add(list[(int)indexMenor]);
+            list.RemoveAt((int)indexMenor);
+        }
+
+        return ordenada;
     }
 }
